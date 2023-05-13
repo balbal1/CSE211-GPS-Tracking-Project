@@ -20,7 +20,7 @@ void write_UART0(char y){
 void printString(char *str){
 	while (*str) {
 		write_UART0(*str);
-		c++;
+		str++;
 	}
 }
 void printStringln(char *str){

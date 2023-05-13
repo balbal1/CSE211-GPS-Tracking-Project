@@ -39,5 +39,3 @@ void initPortF (void) {
 	GPIO_PORTF_DATA_R = 0x00;
 		
 }
-
-

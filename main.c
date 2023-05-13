@@ -64,8 +64,8 @@ int __main(void) {
 			firstTime = 1;
 		}
 		
-		chooseLedColor(double destLat, double destLong, double currentLat, double currentLong);
-		calculateStepsTaken(double oldLat, double oldLong, double currentLat, double currentLong);
+		chooseLedColor(destLat, destLong, currentLat, currentLong);
+		calculateStepsTaken(oldLat, oldLong, currentLat, currentLong);
 		
 		oldLat = currentLat;
 		oldLong = currentLong;

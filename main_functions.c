@@ -7,14 +7,15 @@ extern double  currentLat, currentLong, sumOfDist, currentDist, distFromLastStep
 void chooseLedColor(double destX, double destY, double currentX, double currentY){
 	currentDist = distance(currentX,destX,currentY,destY);
 	ledOFF();
+	printString("led color: ");
 	if (currentDist > 5 ){
-		color = {"red"};
+		printStringln("red");
 		ledON(red);
 	} else if (currentDist < 5 && currentDist > 2.5){
-		color = {"yellow"};
+		printStringln("yellow");
 		ledON(yellow);
 	} else {
-		color = {"green"};
+		printStringln("green");
 		ledON(green);
 	}
     
@@ -45,9 +46,6 @@ void serialPrint(void) {
 	printDouble(currentLat);
 	printString("current Longitude: ");
 	printDouble(currentLong);
-	
-	printString("led color: ");
-	printStringln(color);
 	
 	printString("distance to destination: ");
 	printDouble(currentDist);
