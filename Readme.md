@@ -1,9 +1,13 @@
 # GPS Tracking System Project
 
-1. The GPS system stores the coordinates of the start point.
-2. After reaching the destination point, the GPS system stores the coordinates
+This is CSE211 GPS tracking system project using Ti's tiva TM4C123GH6PM board.
+
+# Desired behaviour
+
+* The GPS system stores the coordinates of the start point.
+* After reaching the destination point, the GPS system stores the coordinates
    of the end point and calculates the total distance that was taken by the user.
-3. The output will be translated as the following.
+* The output will be translated as the following.
    1. Stage 1: The built-in LED will be turned on(green) when the target
       destination is reached.
    2. Stage 2: The built-in LED will be turned on(yellow) when the target
@@ -13,6 +17,7 @@
       
 # Video of The Project
 https://drive.google.com/file/d/1qOvVeDA646bRYG1yRKwBfUAXW7IUD6Wt/view?usp=share_link
+
 # Flow of Program
 
 * We get the info about our position from the GPS satalites through an antenna.
